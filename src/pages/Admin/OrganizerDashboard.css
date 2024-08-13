@@ -1,0 +1,116 @@
+General styles
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ec1818;
+    background-color: #f4f4f4;
+  }
+  
+  .organizer-dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1, h2, h3, h4 {
+    margin-bottom: 15px;
+  }
+  
+  /* Event List styles */
+  .event-list {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .event-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .event-list li {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+  }
+  
+  .event-list li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Booking List styles */
+  .booking-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .booking-list table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .booking-list th, .booking-list td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .booking-list th {
+    background-color: #f8f8f8;
+  }
+  
+  /* Button styles */
+  button {
+    background-color: #dfe7df;
+    color: rgb(15, 15, 15);
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Status colors */
+  .status-confirmed { color: green; }
+  .status-pending { color: orange; }
+  .status-in-progress { color: blue; }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .booking-list table, .booking-list thead, .booking-list tbody, .booking-list th, .booking-list td, .booking-list tr {
+      display: block;
+    }
+    
+    .booking-list thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    
+    .booking-list tr { border: 1px solid #ccc; }
+    
+    .booking-list td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+    
+    .booking-list td:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      content: attr(data-column);
+      color: #ffffff;
+      font-weight: bold;
+    }
+  }

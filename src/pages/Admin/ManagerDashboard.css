@@ -1,0 +1,88 @@
+/* Basic Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Dashboard Container */
+  .dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .dashboard-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Main Content */
+  .dashboard-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Current Event Section */
+  .current-event {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .current-event h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  .event-card {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-card h3 {
+    margin: 0 0 10px;
+    color: #00796B;
+  }
+  
+  .event-card p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  /* Upcoming Events Section */
+  .upcoming-events {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .upcoming-events h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  .events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .upcoming-events .event-card {
+    background-color: #FFF9C4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  

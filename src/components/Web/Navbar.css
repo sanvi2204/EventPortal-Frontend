@@ -1,0 +1,115 @@
+/* Navbar.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #295454;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+ 
+}
+
+.nav-logo {
+  font-size: 24px;
+  color: #FFC107; /* SparkEvents color */
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+  margin-right: 20px;
+}
+
+.nav-links:hover {
+  color: #FFC107; /* Hover color */
+}
+
+/* Styles specific to the Services dropdown */
+.services-dropdown {
+  position: relative;
+}
+
+.services-dropdown > .nav-links {
+  cursor: pointer;
+}
+
+.services-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #295454;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-menu .nav-item {
+  margin: 0;
+}
+
+.dropdown-menu .nav-links {
+  display: block;
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+.menu-bars {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 0px;
+  
+  color: aliceblue;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+
+  /* Adjust dropdown for mobile */
+  .services-dropdown .dropdown-menu {
+    position: static;
+    display: none;
+  }
+
+  .services-dropdown.active .dropdown-menu {
+    display: block;
+  }
+}
